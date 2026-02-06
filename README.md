@@ -2,6 +2,8 @@
 
 ![mainvisual](https://github.com/user-attachments/assets/32e362a6-3bb5-457f-845d-b638c9670d65)
 
+## 대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 리뉴얼하였습니다.
+
 ### Before & After
 
 | Before | After |
