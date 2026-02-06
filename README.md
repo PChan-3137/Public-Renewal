@@ -29,19 +29,43 @@
 ### 1) 로컬 파일로 실행 (권장)
 - `index.html` 더블클릭 → 바로 실행
 
-## 리뉴얼 요소
-### 메인 페이지
-- 기능이 한 화면에 많이 보여 시선이 분산되기에 이를 개선하기 위해 섹션을 구분
-- 내비게이션에 서브메뉴가 지나치게 많이 배치되었고, 사이트맵에선 서브 메뉴를 확인할수 없었음
-- 이를 개선하기위에 내비게이션과 사이트맵의 배치구조를 서로 바꾸었음
+## ✔ 주요 기능
+### ✏ 메인 페이지
+<img width="1898" height="793" alt="Image" src="https://github.com/user-attachments/assets/7c666a02-adf7-4895-9032-4c8b174f8c1a" />
 
-### 사이트맵
-- 서브메뉴를 확인할수 없던 구조에서 각 카테고리별로 나누어 서브메뉴를 배치
+- 화면 중앙에 배치된 검색 기능
+- 주요 서비스 바로가기 아이콘 함께 배치
+- 반응형에서 검색 input 변경
 
-### 강좌 / 행사 페이지
-- 단순한 텍스트의 나열로 내용을 제대로 확인하기 어려웠음
-- 카드 형태로 변경하고 이미지를 배치하여 원하는 강좌를 찾기 쉽게 수정함
+### ✏ 사이트맵 페이지
+<img width="1082" height="537" alt="Image" src="https://github.com/user-attachments/assets/26e0abb7-4879-44d7-a1ef-5f255aae2344" />
 
+- 각 메뉴의 서브 메뉴를 표시
+- 반응형으로 세로 배치로 변경
+
+### ✏ 로그인 페이지
+<img width="658" height="516" alt="Image" src="https://github.com/user-attachments/assets/6c0a820e-eb6a-4459-a495-707956f8f277" />
+
+- ID/비밀번호 입력
+- 반응형 구조 적용
+
+### ✏ 강좌 / 행사 페이지
+<img width="1425" height="1051" alt="Image" src="https://github.com/user-attachments/assets/a8776f41-4acf-4687-b901-b45aec3bb75a" />
+
+- 필터와 페이지네이션 기능 구현(program.js)
+- 카드형 배치
+- 카드 내부 이미지요소 추가
+
+### ✏ 공지사항 페이지
+<img width="1090" height="786" alt="Image" src="https://github.com/user-attachments/assets/672e8e21-3f7b-4cfb-b835-723197d82121" />
+
+- 페이지네이션 기능(notice.js)
+- 페이지 갯수에 따라 prev,next 버튼 비활성화
+
+### ✏ 공통 요소
+<img width="1905" height="263" alt="Image" src="https://github.com/user-attachments/assets/65973bee-a7b5-448c-b816-83aa951cbe80" />
+
+- header : 전체 페이지 공통 헤더 및 GNB + 서브메뉴 포함
 
 
 ## 파일 구조
