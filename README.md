@@ -12,7 +12,7 @@
 
 
 ## Link
--바로가기 (web-site) : [link](https://pchan-3137.github.io/asd/) <br/>
+-바로가기 (web-site) : [link](https://pchan-3137.github.io/Public-Renewal/) <br/>
 -기획서 (Figma-slide) : [link](https://www.figma.com/slides/mnPXyfnT0IcQqa9w7wBcAT/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%B0%95%EC%B0%AC?t=PbzM5V5iYU8hPhc3-6) <br/>
 
 ## 사용된 기술
@@ -68,9 +68,5 @@
 │  └─ script.js
 └─ img/
 ```
-
-
-
-<img width="750" height="4895" alt="Image" src="https://github.com/user-attachments/assets/b40648f3-54b9-436e-aaff-fc2696954abb" />
 
 
