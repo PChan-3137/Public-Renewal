@@ -1,0 +1,95 @@
+
+.navin{display: none;}
+.subContent{
+  padding: 0px 40px;
+}
+
+.login-wrap{
+  margin: 210px 0;
+  max-width: 372px;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 50px 82px;
+  gap: 24px;
+  box-shadow: 0 0 15px 10px #dfdbdb66;
+}
+.login-title{font-size: 24px; margin: 0;}
+.login-wrap input{
+  width: calc(100% - 32px);
+  padding: 16px;
+  border: 1px solid #8F8F8F80;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 2px #73717133;
+}
+.login-wrap input::placeholder{
+  font-size: 14px;
+  /* padding: 16px; */
+}
+.login-wrap input:focus{
+  outline: 1px solid #5890FF;
+}
+.login-wrap input:focus::placeholder{
+  color: transparent;
+}
+.login-wrap button{
+  border-radius: 10px;
+  height: 46px;
+  cursor: pointer;
+}
+.login-btn{
+  border: none;
+  margin: 0;
+  width: 100%;
+  background: #5890FF;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+.register{
+  width: 100%;
+  max-width: 372px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.register button{
+  flex: 1;
+}
+.idpw-searchBtn{
+  background: white;
+  border: 1px solid #2F5CBA;
+  font-size: 14px;
+}
+
+.register-btn{
+  border: none;
+  background: #585858;
+  color: white;
+  font-size: 14px;
+}
+.register-btn img{margin-left: 6px;}
+
+@media (max-width:768px){
+  .login-wrap{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    padding: 30px 40px;
+    margin: 100px 0;
+  }
+  .login-title{
+    text-align: center;
+    width: 132px;
+    font-size: 18px;
+  }
+  .register{
+    max-width: none;
+  }
+  .register button{
+    /* font-size: 10px; */
+  }
+}

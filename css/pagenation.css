@@ -1,0 +1,37 @@
+.pagenation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+#numbers{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.page-btn{
+  border: none;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.page-btn:disabled {
+  cursor: default;
+}
+.pagenation button{padding: 10px 10px;}
+#numbers li a.active{
+  background: #58585880;
+  color: #fff;
+}
+
+@media (max-width:768px){
+  .page-btn{font-size: 12px;padding: 4px 8px;}
+  .pagenation button{padding: 6px 8px;border: none;position: relative;}
+  #numbers{position: absolute; bottom: -25px;}
+}

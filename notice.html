@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sub-style.css">
+  <link rel="stylesheet" href="css/notice.css">
+  <link rel="stylesheet" href="css/pagenation.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+  <header id="header">
+      <div class="inner">
+        <div class="logo"><a class="highlight" href="index.html"><img src="img/Logo.png" alt=""></a></div>
+        <nav class="gnb">
+          <a class="menu-item" data-target="menu01" href="#">자료정보
+          </a>
+          <a class="menu-item" data-target="menu02" href="#">프로그램</a>
+          <a class="menu-item" data-target="menu03" href="#">열린공간</a>
+          <a class="menu-item" data-target="menu04" href="#">학교도서관지원</a>
+          <a class="menu-item" data-target="menu05" href="#">문화원안내</a>
+          <a class="menu-item" data-target="menu06" href="#">정보공개</a>
+        </nav>
+        <div class="header-sub">
+          <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+          <button id="sitemapBtn"><a class="highlight" class="highlight" href="sitemap.html"><img src="img/Sitemappng.png" alt=""></a></button>
+          <button id="MmenuBtn"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+    </header>
+    <div class="sub-wrap" id="sub-wrap">
+      <div class="sub-inner">
+        <div class="logo sub-op"><img src="img/Logo.png" alt=""></div>
+        <div class="sub-menu">
+          <div class="sub-panel" id="menu01" data-panel="data">
+            <ul>
+              <li><a href="#">검색</a></li>
+              <li><a href="#">신청</a></li>
+              <li><a href="#">내서재</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu02" data-panel="program">
+            <ul>
+              <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+              <li><a href="#">동아리</a></li>
+              <li><a href="#">견학</a></li>
+              <li><a href="#">내강좌실</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu03" data-panel="space">
+            <ul>
+              <li><a href="#">시설이용</a></li>
+              <li><a href="#">정보공유</a></li>
+              <li><a href="#">공공도서관연계</a></li>
+              <li><a href="#">참여신청</a></li>
+              <li><a href="#">사이버 신고센터</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu04" data-panel="support">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">업무지원</a></li>
+              <li><a href="#">새소식</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu05" data-panel="info">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a class="highlight" href="#">소식</a></li>
+              <li><a href="#">문화원홍보</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu06" data-panel="open">
+            <ul>
+              <li><a href="#">정보공개안내</a></li>
+              <li><a href="#">청렴투명행정</a></li>
+              <li><a href="#">자치법규 · 규정</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-sub">
+          <button class="sub-op"><img src="img/Login.png" alt=""></button>
+          <button class="sub-op"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+    </div>
+    <div class="M-wrapper" id="M-wrapper">
+      <div class="M-header">
+        <div class="logo"><a href=""><img src="img/Logo.png" alt=""></a></div>
+        <div class="header-sub">
+          <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+          <button id="MmenuClose"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub1">
+        <div class="M-title">자료정보</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">검색</a></li>
+            <li><a href="">신청</a></li>
+            <li><a href="">내서재</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub2">
+        <div class="M-title">프로그램</div>
+        <div class="M-content">
+          <ul>
+            <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+            <li><a href="">동아리</a></li>
+            <li><a href="">견학</a></li>
+            <li><a href="">내강좌실</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub3">
+        <div class="M-title">열린공간</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">시설이용</a></li>
+            <li><a href="">정보공유</a></li>
+            <li><a href="">공공도서관연계</a></li>
+            <li><a href="">참여신청</a></li>
+            <li><a href="">사이버 신고센터</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub4">
+        <div class="M-title">학교도서관지원</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">소개</a></li>
+            <li><a href="">업무지원</a></li>
+            <li><a href="">새소식</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub5">
+        <div class="M-title">문화원안내</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">소개</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a class="highlight" href="notice.html">소식</a></li>
+            <li><a href="">문화원홍보</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub6">
+        <div class="M-title">정보공개</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">정보공개안내</a></li>
+            <li><a href="">청렴투명행정</a></li>
+            <li><a href="">자치법규 · 규정</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  <div id="sub-main">
+    <div class="navin">
+      <h2 class="inTitle">문화원안내</h2>
+      <div class="navinItem subO"><div class="navinTitle">소개</div></div>
+      <div class="navinItem subO"><div class="navinTitle">이용안내</div></div>
+      <div class="navinItem subO active">
+        <div class="navinTitle">소식</div>
+        <ul class="navinList">
+          <li class="active"><a href="">공지사항 </a></li>
+          <li><a href="">보도자료</a></li>
+          <li><a href="">문화원일정</a></li>
+        </ul>
+      </div>
+      <div class="navinItem subO"><div class="navinTitle">문화원홍보</div></div>
+      
+    </div>
+    <div class="subContent">
+      <div class="scHeader">
+        <h2 class="smhTitle">공지사항</h2>
+        <div class="smhDirec">
+          <a href="index.html"><img src="img/home-direc.png" alt=""></a>
+          <img src="img/right-direc.png" alt="">
+          <p>문화원안내</p>
+          <img src="img/right-direc.png" alt="">
+          <p>소식</p>
+          <img src="img/right-direc.png" alt="">
+          <p>공지사항</p>
+        </div>
+      </div>
+      <div class="notice-in">
+        <div class="notice-head">
+          <div class="pager">
+            <p>전체 <span>540</span> 건</p>
+            <p><span>1</span>/54 페이지</p>
+          </div>
+          <div class="search-area">
+            <select name="" id="">
+              <option value="">제목+내용</option>
+              <option value="">제목</option>
+              <option value="">내용</option>
+              <option value="">글쓴이</option>
+            </select>
+            <input type="text">
+            <button>검색</button>
+          </div>
+        </div>
+        <div class="notice-table">
+          <div class="notice-top">
+            <p class="num">번호</p>
+            <div class="n-item-wrap">
+              <p class="title">제목</p>
+              <div class="n-item-wrap2">
+                <p class="writer">작성자</p>
+                <p class="viewCount">조회수</p>
+                <p class="date">등록일</p>
+                <p class="File">첨부</p>
+              </div>
+            </div>
+          </div>
+          <div class="notice-content">
+            <div class="n-item">
+              <p class="num">540</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2026년 대전학생교육문화원 주말 단시간 기간제 근로자 채용 공고</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">112</p>
+                  <p class="date">2025.12.11</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">539</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 12월 「이달의 작가」 일일특강 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">190</p>
+                  <p class="date">2025.12.04</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">538</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 12월 1216 해봄 특강(나만의 보드게임 만들기) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">107</p>
+                  <p class="date">2025.12.04</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">537</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 마지막 12월「우리 아이 그림책 놀이터」(12월 6일 ~ 12월 7일) 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">103</p>
+                  <p class="date">2025.12.04</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">536</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 12월 1216 해봄 특강(나만의 보드게임 만들기) 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">248</p>
+                  <p class="date">2025.11.26</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">535</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년 12월 문화예술 창의 체험 특강 수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">243</p>
+                  <p class="date">2025.11.25</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">534</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 '비대면 택배(책가방)' 서비스 종료</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">113</p>
+                  <p class="date">2025.11.24</p>
+                  <p class="File"></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">533</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내]2025년도 희망도서 신청 마감 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">안*</p>
+                  <p class="viewCount">82</p>
+                  <p class="date">2025.11.24</p>
+                  <p class="File"></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">532</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년도 12월 「문화예술·창의 체험 프로그램」 수강생 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">346</p>
+                  <p class="date">2025.11.15</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">531</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 12월 학생봉사활동신청안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">박*</p>
+                  <p class="viewCount">93</p>
+                  <p class="date">2025.11.14</p>
+                  <p class="File"></p>
+                </div>
+              </div>
+            </div>
+            <div class="n-item">
+              <p class="num">530</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 마지막「12월 우리 아이 그림책 놀이터」 프로그램 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">333</p>
+                  <p class="date">2025.11.14</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">529</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 11월 어린이 공연 <시골쥐와 도시쥐> 관람 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">134</p>
+                  <p class="date">2025.11.13</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">528</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 11월 「이달의 작가」 일일특강 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">104</p>
+                  <p class="date">2025.11.12</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">527</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 11월 1216 해봄 특강(태블릿으로 나만의 드로잉 캐릭 만들기) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">228</p>
+                  <p class="date">2025.11.06</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">526</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년 하반기 3기 문화예술 창의 체험 프로그램 수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">364</p>
+                  <p class="date">2025.11.05</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">525</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 11월 「이달의 해봄」 체험 및 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">714</p>
+                  <p class="date">2025.11.03</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">524</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 11월 이달의 작가(길상효) 행사 및 일일 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">254</p>
+                  <p class="date">2025.10.31</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">523</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 하반기 3기 문화예술 창의 체험「그림책과 연극」확대 모집</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">529</p>
+                  <p class="date">2025.10.31</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">522</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 11월 1216 해봄 행사 안내(11. 1. ~ 11. 30.)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">216</p>
+                  <p class="date">2025.10.30</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">521</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 11월「우리 아이 그림책 놀이터」(11월 1일 ~ 11월 30일) 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">167</p>
+                  <p class="date">2025.10.30</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">520</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 11월 1216 해봄 특강(태블릿으로 나만의 드로잉 캐릭터 만들기) 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">122</p>
+                  <p class="date">2025.10.30</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">519</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년도 하반기 3기 「문화예술·창의 체험 프로그램」 수강생 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">358</p>
+                  <p class="date">2025.10.23</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">518</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 10월 「이달의 작가」 일일특강 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">84</p>
+                  <p class="date">2025.10.23</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">517</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 「10월의 하늘」 수강 확정자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">150</p>
+                  <p class="date">2025.10.21</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">516</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 하반기 「초등 독서동아리」수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">297</p>
+                  <p class="date">2025.10.16</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">515</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 10월 「도서관 밖 박물관」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">163</p>
+                  <p class="date">2025.10.16</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">514</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 10월「우리 아이 그림책 놀이터」(10월 18일 ~ 10월 19일) 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">150</p>
+                  <p class="date">2025.10.15</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">513</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 11월 학생봉사활동신청안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">박*</p>
+                  <p class="viewCount">79</p>
+                  <p class="date">2025.10.15</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">512</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 10월 어린이 공연 <버블 익스프레스> 관람 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">166</p>
+                  <p class="date">2025.10.15</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">511</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 10월 1216 해봄 특강(나만의 폰케이스 만들기) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">84</p>
+                  <p class="date">2025.10.14</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">510</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년「11월 우리 아이 그림책 놀이터」 프로그램 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">453</p>
+                  <p class="date">2025.10.14</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">509</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 하반기 2기 푸른물결 수영교실 수강확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">172</p>
+                  <p class="date">2025.10.13</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">508</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 10월 「도서관 밖 박물관」 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">439</p>
+                  <p class="date">2025.10.02</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">507</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 과학자들의 재능기부 강연 「2025년 10월의 하늘」 참여자 모집</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">471</p>
+                  <p class="date">2025.10.02</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">506</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 10월 1216 해봄 특강(나만의 폰 케이스 만들기) 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">199</p>
+                  <p class="date">2025.10.02</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">505</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 하반기 「초등 독서동아리」 회원 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">585</p>
+                  <p class="date">2025.10.01</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">504</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 10월 1216 해봄 행사 안내(10. 1. ~ 10. 31.)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">188</p>
+                  <p class="date">2025.09.30</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">503</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">문자전송시스템 장애 발생에 따른 대출자료 연체 해제 행사 추진</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">122</p>
+                  <p class="date">2025.09.29</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">502</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 10월 이달의 작가(김지영) 행사 및 일일 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">349</p>
+                  <p class="date">2025.09.29</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">501</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 10월 「이달의 해봄」 체험 및 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">537</p>
+                  <p class="date">2025.09.26</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">500</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 9월 「이달의 해봄」 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">134</p>
+                  <p class="date">2025.09.25</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">499</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 9월 「이달의 작가」 일일특강 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">96</p>
+                  <p class="date">2025.09.25</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">498</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년 하반기 2기 문화예술 창의 체험 프로그램 수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">312</p>
+                  <p class="date">2025.09.24</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">497</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년「10월 우리 아이 그림책 놀이터」 프로그램 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">486</p>
+                  <p class="date">2025.09.22</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">496</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">
+                    <대전학생교육문화원 추석연휴기간 운영 안내>
+                  </a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">265</p>
+                  <p class="date">2025.09.22</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">495</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년 9월 독서의 달 "아낌없이 주는 도서관" 행사 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">204</p>
+                  <p class="date">2025.09.18</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">494</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 10월 학생 봉사 활동 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">박*</p>
+                  <p class="viewCount">137</p>
+                  <p class="date">2025.09.18</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">493</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 추석연휴 책가방, 책나래 서비스 중지 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">91</p>
+                  <p class="date">2025.09.18</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">492</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 9월 「도서관 밖 박물관」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">131</p>
+                  <p class="date">2025.09.17</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">491</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 9월 「도서관 밖 박물관」 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">229</p>
+                  <p class="date">2025.09.11</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">490</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년도 하반기 2기 「문화예술·창의 체험 프로그램」 수강생 모집 안내(일부 대상 확대)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">571</p>
+                  <p class="date">2025.09.11</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">489</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년「독서의 달」1일 특강(소리가 들려요!) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">192</p>
+                  <p class="date">2025.09.10</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">488</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년「독서의 달」1일 특강(우주를 담은 배쓰밤) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">273</p>
+                  <p class="date">2025.09.03</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">487</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 9월 이달의 작가(황선애) 행사 및 일일 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">537</p>
+                  <p class="date">2025.08.28</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">486</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 9월 1216 해봄 행사 안내(9. 1. ~ 9. 29.)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">363</p>
+                  <p class="date">2025.08.27</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">485</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 9월 이달의 해봄 체험 및 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">710</p>
+                  <p class="date">2025.08.27</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">484</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 하반기 「신나는 도서관 나들이」견학 프로그램 참여 기관 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">윤*</p>
+                  <p class="viewCount">259</p>
+                  <p class="date">2025.08.25</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">483</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 「독서의 달」 행사 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">성*</p>
+                  <p class="viewCount">783</p>
+                  <p class="date">2025.08.23</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">482</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 8월 1216 해봄 특강(망고&패션후르츠 청 만들기) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">195</p>
+                  <p class="date">2025.08.21</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">481</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 8월 어린이 공연 <벌룬 매직 월드> 관람 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">240</p>
+                  <p class="date">2025.08.21</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">480</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 하반기 1기 푸른물결 수영교실 수강확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">250</p>
+                  <p class="date">2025.08.21</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">479</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 하반기 1기 문화예술 창의 체험 프로그램 수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">427</p>
+                  <p class="date">2025.08.20</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">478</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 8월 「도서관 밖 박물관」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">172</p>
+                  <p class="date">2025.08.19</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">477</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 9월 학생 봉사활동 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">박*</p>
+                  <p class="viewCount">120</p>
+                  <p class="date">2025.08.18</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">476</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년도 하반기 1기 「문화예술·창의 체험 프로그램」운영 대상 확대 및 일정 변경 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">361</p>
+                  <p class="date">2025.08.14</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">475</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 8월 1216 해봄 특강(망고&패션후르츠 청 만들기) 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">416</p>
+                  <p class="date">2025.08.13</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">474</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 8월 「도서관 밖 박물관」 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">295</p>
+                  <p class="date">2025.08.13</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">473</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 청소년 도서(종합자료실 내) 코너 신설</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">241</p>
+                  <p class="date">2025.08.12</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">472</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 8월 「어린이 공연」<벌룬 매직 월드> 관람 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">770</p>
+                  <p class="date">2025.08.08</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">471</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 8월「이달의 해봄」수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">199</p>
+                  <p class="date">2025.08.07</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">470</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 8월 이달의 작가 일일특강 수강 확정자 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">138</p>
+                  <p class="date">2025.08.07</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">469</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년도 하반기 1기 「문화예술·창의 체험 프로그램」 수강생 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">497</p>
+                  <p class="date">2025.08.07</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">468</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 하반기 1기 푸른물결 수영교실 수강생 모집</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">442</p>
+                  <p class="date">2025.08.06</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">467</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 8월 1216 해봄 특강(북 퍼퓸 만들기) 수강 확정 및 대기자 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">246</p>
+                  <p class="date">2025.07.31</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">466</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 8월 이달의 작가(김지안) 행사 및 일일 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">482</p>
+                  <p class="date">2025.07.31</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">465</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 8월 1216 해봄 행사 안내(8. 1. ~ 8. 31.)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">213</p>
+                  <p class="date">2025.07.31</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">464</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 8월 학생 봉사 활동 신청 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">박*</p>
+                  <p class="viewCount">125</p>
+                  <p class="date">2025.07.30</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">463</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 여름방학 특별 문화예술 창의 체험 프로그램 수강 확정자 및 대기자 명단 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">296</p>
+                  <p class="date">2025.07.30</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">462</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 대전학생교육문화원 재개원 기념 행사</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">1049</p>
+                  <p class="date">2025.07.28</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">461</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 7월 이달의 작가(천효정) 전시 및 행사 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">149</p>
+                  <p class="date">2025.07.28</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">460</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 8월 이달의 해봄 체험 및 특강 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">768</p>
+                  <p class="date">2025.07.28</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">459</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 7월 이달의 해봄 전시 및 체험 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">임*</p>
+                  <p class="viewCount">337</p>
+                  <p class="date">2025.07.28</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">458</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 8월 1216해봄 특강(북 퍼퓸 만들기) 모집일 변경 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">128</p>
+                  <p class="date">2025.07.28</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">457</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 7월 1216 해봄 행사 안내(7. 30. ~ 7. 31.)</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">138</p>
+                  <p class="date">2025.07.25</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">456</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 8월 1216 해봄 특강(북 퍼퓸 만들기) 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">이*</p>
+                  <p class="viewCount">116</p>
+                  <p class="date">2025.07.25</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">455</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 여름방학 푸른물결 수영교실 추가모집 수강확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">366</p>
+                  <p class="date">2025.07.22</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">454</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 7월 이달의 작가「천효정 작가와의 만남」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">127</p>
+                  <p class="date">2025.07.22</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">453</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 냉난방기 공사 완료 및 조기 개원 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">980</p>
+                  <p class="date">2025.07.22</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">452</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025년 여름방학 「문화예술·창의 체험 프로그램」 수강생 모집 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">361</p>
+                  <p class="date">2025.07.18</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">451</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 여름방학 푸른물결 수영교실 추가 개설</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">258</p>
+                  <p class="date">2025.07.18</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">450</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">「대전학생교육문화원 고정형 영상정보처리기기 운영·관리 방침」 개정</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">최*</p>
+                  <p class="viewCount">2413</p>
+                  <p class="date">2025.07.16</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">449</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 7월 「도서관 밖 박물관」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">174</p>
+                  <p class="date">2025.07.16</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">448</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[확정] 2025년 여름방학 푸른물결 수영교실 수강확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">881</p>
+                  <p class="date">2025.07.15</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">447</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 7월 이달의 작가「천효정 작가와의 만남」 운영</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">김*</p>
+                  <p class="viewCount">283</p>
+                  <p class="date">2025.07.09</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">446</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 7월 「도서관 밖 박물관」 운영 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">조*</p>
+                  <p class="viewCount">359</p>
+                  <p class="date">2025.07.08</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">445</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[모집] 2025 여름방학 푸른물결 수영교실 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">905</p>
+                  <p class="date">2025.06.30</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">444</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 시범사업 "서점에서(愛書) 바로대출" 운영</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">안*</p>
+                  <p class="viewCount">479</p>
+                  <p class="date">2025.06.23</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">443</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 6월 「도서관 밖 박물관」 수강 확정 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">277</p>
+                  <p class="date">2025.06.19</p>
+                  <p class="File file-N"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">442</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">[안내] 2025년 「도서관 밖 박물관」 특강 운영</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">577</p>
+                  <p class="date">2025.06.12</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+            
+            <div class="n-item">
+              <p class="num">441</p>
+              <div class="n-item-wrap">
+                <p class="title"><a href="">2025년 하반기 교육프로그램(강좌, 공연) 공모 선정 결과 안내</a></p>
+                <div class="n-item-wrap2">
+                  <p class="writer">황*</p>
+                  <p class="viewCount">732</p>
+                  <p class="date">2025.06.02</p>
+                  <p class="File file-Y"><img src="img/clip.png" alt=""></p>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagenation">
+          <button class="page-btn prevs">
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+          <button class="page-btn prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+           <ol id="numbers"></ol>
+          <button class="page-btn next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <button class="page-btn nexts">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <nav class="footernav">
+          <button class="fNavBtn">개인정보처리방침</button>
+          <button class="fNavBtn">영상정보처리방침</button>
+          <button class="fNavBtn">저작권정책</button>
+          <button class="fNavBtn">행정서비스헌장</button>
+          <button class="fNavBtn">전화번호</button>
+        </nav>
+        <div class="footer-sub">
+          <div class="other-site-nav">
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-title">교육청 및 직속기관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">대전광역시교육청</a></li>
+                  <li><a href="#">대전동부교육지원청</a></li>
+                  <li><a href="#">대전서부교육지원청</a></li>
+                  <li><a href="#">대전교육과학연구원</a></li>
+                  <li><a href="#">대전교육연수원</a></li>
+                  <li><a href="#">대전평생학습관</a></li>
+                  <li><a href="#">대전교육정보원</a></li>
+                  <li><a href="#">한밭교육박물관</a></li>
+                  <li><a href="#">대전학생해양수련원</a></li>
+                  <li><a href="#">대전유아교육진흥원</a></li>
+                  <li><a href="#">대전특수교육원</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">대전지역공공도서관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">유성구통합도서관</a></li>
+                  <li><a href="#">동구공공도서관</a></li>
+                  <li><a href="#">가수원도서관</a></li>
+                  <li><a href="#">갈마도서관</a></li>
+                  <li><a href="#">둔산도서관</a></li>
+                  <li><a href="#">산성어린이도서관</a></li>
+                  <li><a href="#">서구어린이도서관</a></li>
+                  <li><a href="#">석봉도서관</a></li>
+                  <li><a href="#">송촌도서관</a></li>
+                  <li><a href="#">안산도서관</a></li>
+                  <li><a href="#">월평도서관</a></li>
+                  <li><a href="#">한밭도서관</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">유관기관/단체</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">교육부</a></li>
+                  <li><a href="#">국가전자도서관</a></li>
+                  <li><a href="#">국립중앙도서관</a></li>
+                  <li><a href="#">국회도서관</a></li>
+                  <li><a href="#">한국도서관협회</a></li>
+                  <li><a href="#">국립세종도서관</a></li>
+                  <li><a href="#">국립어린이청소년도서관</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="other-site"><span>관련사이트 바로가기</span><img src="img/footersub.png" alt=""></div>
+          <button id="topBtn"><img src="img/topBtn.png" alt=""><span>TOP </span></button>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-b1">
+          <p class="fb1-1 fb1left">34849 대전광역시 중구 동서대로 1360</p>
+          <p class="fb1-1">대표전화 : (042)229-1470</p>
+          <p class="fb1-1 fb1left">팩스번호 : (042)229-1490</p>
+          <p class="fb1-1">E-Mail : djsecclib@korea.k</p>
+          <br>
+          <p class="fb1-2">Copyright(c) Daejeon Student Education & Culture Center. All Rights Reserved.</p>
+        </div>
+        <div class="footer-b2">
+          <button class="footer-sns"><i class="fa-brands fa-youtube"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-facebook"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-twitter"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-instagram"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="javascript/HFscript.js"></script>
+  <script src="javascript/notice.js"></script>
+</body>
+</html>

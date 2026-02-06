@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행사신청</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sub-style.css">
+  <link rel="stylesheet" href="css/pagenation.css">
+  <link rel="stylesheet" href="css/program.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <header id="header">
+    <div class="inner">
+      <div class="logo"><a class="highlight" href="index.html"><img src="img/Logo.png" alt=""></a></div>
+      <nav class="gnb">
+        <a class="menu-item" data-target="menu01" href="#">자료정보
+        </a>
+        <a class="menu-item" data-target="menu02" href="#">프로그램</a>
+        <a class="menu-item" data-target="menu03" href="#">열린공간</a>
+        <a class="menu-item" data-target="menu04" href="#">학교도서관지원</a>
+        <a class="menu-item" data-target="menu05" href="#">문화원안내</a>
+        <a class="menu-item" data-target="menu06" href="#">정보공개</a>
+      </nav>
+      <div class="header-sub">
+        <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+        <button id="sitemapBtn"><a class="highlight" href="sitemap.html"><img src="img/Sitemappng.png"
+              alt=""></a></button>
+        <button id="MmenuBtn"><img src="img/Sitemappng.png" alt=""></button>
+      </div>
+    </div>
+  </header>
+  <div class="sub-wrap" id="sub-wrap">
+    <div class="sub-inner">
+      <div class="logo sub-op"><img src="img/Logo.png" alt=""></div>
+      <div class="sub-menu">
+        <div class="sub-panel" id="menu01" data-panel="data">
+          <ul>
+            <li><a href="#">검색</a></li>
+            <li><a href="#">신청</a></li>
+            <li><a href="#">내서재</a></li>
+          </ul>
+        </div>
+        <div class="sub-panel" id="menu02" data-panel="program">
+          <ul>
+            <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+            <li><a href="#">동아리</a></li>
+            <li><a href="#">견학</a></li>
+            <li><a href="#">내강좌실</a></li>
+          </ul>
+        </div>
+        <div class="sub-panel" id="menu03" data-panel="space">
+          <ul>
+            <li><a href="#">시설이용</a></li>
+            <li><a href="#">정보공유</a></li>
+            <li><a href="#">공공도서관연계</a></li>
+            <li><a href="#">참여신청</a></li>
+            <li><a href="#">사이버 신고센터</a></li>
+          </ul>
+        </div>
+        <div class="sub-panel" id="menu04" data-panel="support">
+          <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">업무지원</a></li>
+            <li><a href="#">새소식</a></li>
+          </ul>
+        </div>
+        <div class="sub-panel" id="menu05" data-panel="info">
+          <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a class="highlight" href="notice.html">소식</a></li>
+            <li><a href="#">문화원홍보</a></li>
+          </ul>
+        </div>
+        <div class="sub-panel" id="menu06" data-panel="open">
+          <ul>
+            <li><a href="#">정보공개안내</a></li>
+            <li><a href="#">청렴투명행정</a></li>
+            <li><a href="#">자치법규 · 규정</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-sub">
+        <button class="sub-op"><img src="img/Login.png" alt=""></button>
+        <button class="sub-op"><img src="img/Sitemappng.png" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <div class="M-wrapper" id="M-wrapper">
+    <div class="M-header">
+      <div class="logo"><a href=""><img src="img/Logo.png" alt=""></a></div>
+      <div class="header-sub">
+        <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+        <button id="MmenuClose"><img src="img/Sitemappng.png" alt=""></button>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub1">
+      <div class="M-title">자료정보</div>
+      <div class="M-content">
+        <ul>
+          <li><a href="">검색</a></li>
+          <li><a href="">신청</a></li>
+          <li><a href="">내서재</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub2">
+      <div class="M-title">프로그램</div>
+      <div class="M-content">
+        <ul>
+          <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+          <li><a href="">동아리</a></li>
+          <li><a href="">견학</a></li>
+          <li><a href="">내강좌실</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub3">
+      <div class="M-title">열린공간</div>
+      <div class="M-content">
+        <ul>
+          <li><a href="">시설이용</a></li>
+          <li><a href="">정보공유</a></li>
+          <li><a href="">공공도서관연계</a></li>
+          <li><a href="">참여신청</a></li>
+          <li><a href="">사이버 신고센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub4">
+      <div class="M-title">학교도서관지원</div>
+      <div class="M-content">
+        <ul>
+          <li><a href="">소개</a></li>
+          <li><a href="">업무지원</a></li>
+          <li><a href="">새소식</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub5">
+      <div class="M-title">문화원안내</div>
+      <div class="M-content">
+        <ul>
+          <li><a href="">소개</a></li>
+          <li><a href="">이용안내</a></li>
+          <li><a class="highlight" href="notice.html">소식</a></li>
+          <li><a href="">문화원홍보</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="M-menu" id="M-sub6">
+      <div class="M-title">정보공개</div>
+      <div class="M-content">
+        <ul>
+          <li><a href="">정보공개안내</a></li>
+          <li><a href="">청렴투명행정</a></li>
+          <li><a href="">자치법규 · 규정</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="sub-main">
+    <div class="navin">
+      <h2 class="inTitle">프로그램</h2>
+      <div class="navinItem subO active">
+        <div class="navinTitle">강좌 · 행사</div>
+        <ul class="navinList">
+          <li class="active"><a href="">강좌 · 행사 </a></li>
+          <li><a href="">온라인 북큐레이션</a></li>
+          <li><a href="">온라인 책놀이터</a></li>
+        </ul>
+      </div>
+      <div class="navinItem">
+        <div class="navinTitle">동아리</div>
+      </div>
+      <div class="navinItem subO">
+        <div class="navinTitle">견학</div>
+      </div>
+      <div class="navinItem subO">
+        <div class="navinTitle">내강좌실</div>
+      </div>
+
+    </div>
+    <div class="subContent">
+      <div class="scHeader">
+        <h2 class="smhTitle">강좌 · 행사</h2>
+        <div class="smhDirec">
+          <a href="index.html"><img src="img/home-direc.png" alt=""></a>
+          <img src="img/right-direc.png" alt="">
+          <p>프로그램</p>
+          <img src="img/right-direc.png" alt="">
+          <p>강좌 · 행사</p>
+          <img src="img/right-direc.png" alt="">
+          <p>강좌 행사</p>
+        </div>
+      </div>
+      <div class="program-filter">
+        <div class="filter-group">
+          <span class="filter-title title1">수강 대상</span>
+          <label><input type="checkbox" class="filter-target" value="영유아">영유아</label>
+          <label><input type="checkbox" class="filter-target" value="초등">초등</label>
+          <label><input type="checkbox" class="filter-target" value="중등">중등</label>
+          <label><input type="checkbox" class="filter-target" value="가족">가족</label>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-title">선정 방법</span>
+          <label><input type="checkbox" class="filter-method" value="추첨">추첨</label>
+          <label><input type="checkbox" class="filter-method" value="선착순">선착순</label>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-title">강좌 구분</span>
+          <label><input type="checkbox" class="filter-type" value="강좌">강좌</label>
+          <label><input type="checkbox" class="filter-type" value="특강">특강</label>
+          <label><input type="checkbox" class="filter-type" value="공연">공연</label>
+        </div>
+        <div class="filter-group">
+          <span class="filter-title">강좌명</span>
+          <div class="program-search">
+            <input type="text" class="program-input">
+            <button class="program-search-btn">검색</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="program-wrap">
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="휘황찬란 풍선아트의 세계 속으로!">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img1.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 "휘황찬란 풍선아트의 세계 속으로!"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 02. 03 ~ 02. 06</p></li>
+                <li><strong>대상</strong><p>초 4~6학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 27</p></li>
+                <li><strong>접수현황</strong><p>2/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="신나는 미술놀이">
+          <a class="phighlight" href="program-depth.html">
+            <div class="card-thumb">
+              <img src="img/Program-img2.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 "신나는 미술놀이“</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 01. 20 ~ 01. 23</p></li>
+                <li><strong>대상</strong><p>초 3~5학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 13</p></li>
+                <li><strong>접수현황</strong><p>5/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="나는 꼬마예술가">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img3.png" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 "나는 꼬마예술가“</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 01. 20 ~ 01. 23</p></li>
+                <li><strong>대상</strong><p>초 1~2학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 13</p></li>
+                <li><strong>접수현황</strong><p>5/10명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+
+
+
+
+        <!-- p2 -->
+
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="캘리야 놀자!">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img11.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 "캘리야 놀자!"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 02. 03 ~ 02. 06</p></li>
+                <li><strong>대상</strong><p>초 1~3학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 27</p></li>
+                <li><strong>접수현황</strong><p>13/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="나도 아티스트: 캘리그라피&전각">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img13.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 "나도 아티스트: 캘리그라피&전각"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 20. ~ 2026. 1. 23</p></li>
+                <li><strong>대상</strong><p>초 4~6학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 13</p></li>
+                <li><strong>접수현황</strong><p>12/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="신나는 한국미술 탐험대">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img14.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 "신나는 한국미술 탐험대"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 20. ~ 2026. 1. 23</p></li>
+                <li><strong>대상</strong><p>초 1~3학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 13</p></li>
+                <li><strong>접수현황</strong><p>10/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="브릭 스토리텔러(레고 수업)">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img15.png" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 '브릭 스토리텔러(레고 수업)'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 20. ~ 2026. 1. 23</p></li>
+                <li><strong>대상</strong><p>초 3~5학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 15</p></li>
+                <li><strong>접수현황</strong><p>14/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="3D 제작소">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img16.png" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 "3D 제작소"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 23. ~ 2026. 1. 16</p></li>
+                <li><strong>대상</strong><p>초 4~6학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 09</p></li>
+                <li><strong>접수현황</strong><p>11/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="로봇과 함께하는 겨울방학 특강">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img17.png" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 "로봇과 함께하는 겨울방학 특강"</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 01. 13 ~ 01. 16</p></li>
+                <li><strong>대상</strong><p>초 1~3학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 09</p></li>
+                <li><strong>접수현황</strong><p>10/10명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="미션 경제탐험대(초등 실용경제활동)">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img18.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 '미션 경제탐험대(초등 실용경제활동)'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 01. 06 ~ 01. 09</p></li>
+                <li><strong>대상</strong><p>초 3~5학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 12. 30</p></li>
+                <li><strong>접수현황</strong><p>7/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+
+        <!-- p3 -->
+
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="독서융합 과학교실">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img19.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 '독서융합 과학교실'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 01. 06 ~ 01. 09</p></li>
+                <li><strong>대상</strong><p>초 3~5학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 12. 30</p></li>
+                <li><strong>접수현황</strong><p>7/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="읽고 만드는 3D펜 창작교실">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img20.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 '읽고 만드는 3D펜 창작교실'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 13. ~ 2026. 1. 16</p></li>
+                <li><strong>대상</strong><p>초 4~6학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 08</p></li>
+                <li><strong>접수현황</strong><p>13/15명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="책과 레고로 펼치는 상상교실">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img21.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학특강 '책과 레고로 펼치는 상상교실'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 13. ~ 2026. 1. 16</p></li>
+                <li><strong>대상</strong><p>초 1~3학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 08</p></li>
+                <li><strong>접수현황</strong><p>8/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="생각 뒤집기 독서교실">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img22.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 '생각 뒤집기 독서교실'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 20. ~ 2026. 1. 23</p></li>
+                <li><strong>대상</strong><p>초 3~4학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 09</p></li>
+                <li><strong>접수현황</strong><p>12/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="특강"
+          data-title="질문이 자라나는 그림책 놀이터">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img23.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">겨울방학 특강 '질문이 자라나는 그림책 놀이터'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2026. 1. 20. ~ 2026. 1. 23</p></li>
+                <li><strong>대상</strong><p>초 1~2학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 23 ~ 2026. 01. 09</p></li>
+                <li><strong>접수현황</strong><p>12/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="영유아,초등,중등,가족"
+          data-method="선착순"
+          data-type="공연"
+          data-title="관평도서관 개관 10주년 클래식 음악 연주회">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img4.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">관평도서관 개관 10주년 클래식 음악 연주회</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 12. 27</li>
+                <li><strong>대상</strong><p>누구나</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 09 ~  12. 24</p></li>
+                <li><strong>접수현황</strong><p>88/100명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="영유아"
+          data-method="추첨"
+          data-type="강좌"
+          data-title="포근 포근, 귀마개">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img5.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">[이달의 작가] 포근 포근, 귀마개</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 12. 07</p></li>
+                <li><strong>대상</strong><p>(A) 4~5세 | (B) 6~7세</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 01 ~ 12. 03</p></li>
+                <li><strong>접수현황</strong><p>(A) 5/12명 | (B) 0/12명 </p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등,중등"
+          data-method="선착순"
+          data-type="강좌"
+          data-title="나만의 보드게임 만들기">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img29.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">나만의 보드게임 만들기</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 12. 06</p></li>
+                <li><strong>대상</strong><p>초 4 ~ 중 3학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 12. 01 ~ 12. 03</p></li>
+                <li><strong>접수현황</strong><p>6/10명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="선착순"
+          data-type="강좌"
+          data-title="초등 AI 코딩 활용 교육 '카미봇과 다시쓰는 AI 농사직설'">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img6.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">초등 AI 코딩 활용 교육 '카미봇과 다시쓰는 AI 농사직설'</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 12. 04 ~ 12. 05</p></li>
+                <li><strong>대상</strong><p>초 4~6학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 11. 18 ~ 12. 02</p></li>
+                <li><strong>접수현황</strong><p>7/10명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등,영유아"
+          data-method="선착순"
+          data-type="강좌"
+          data-title="비치코밍 석고방향제 만들기">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img12.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">비치코밍 석고방향제 만들기</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 11. 22</p></li>
+                <li><strong>대상</strong><p>(A) 7~8세 | (B) 9~11세</p></li>
+                <li><strong>접수기간</strong><p>2025. 11. 14 ~ 11. 17</p></li>
+                <li><strong>접수현황</strong><p>(A) 5/10명 | (B) 3/10명 </p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="영유아,초등"
+          data-method="추첨"
+          data-type="강좌"
+          data-title="연필꽂이를 만들어볼까">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img7.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">[이달의 작가]연필꽂이를 만들어볼까</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 11. 16</p></li>
+                <li><strong>대상</strong><p>(A) 6~7세 | (B) 초 1~2학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 11. 10 ~ 10. 12</p></li>
+                <li><strong>접수현황</strong><p>(A) 5/12명 | (B) 0/12명 </p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등"
+          data-method="추첨"
+          data-type="특강"
+          data-title="달, 달 무슨 달?">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img8.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">[이달의 작가] 달, 달 무슨 달?</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 10. 26</p></li>
+                <li><strong>대상</strong><p>(A) 초 1~2학년 | (B) 초 3~4학년</p></li>
+                <li><strong>접수기간</strong><p>2025. 10. 20 ~ 10. 22</p></li>
+                <li><strong>접수현황</strong><p>(A) 5/12명 | (B) 0/12명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+        <article class="program-card"
+          data-target="초등,중등"
+          data-method="선착순"
+          data-type="강좌"
+          data-title="2025년 과학 재능기부 강연 「10월의 하늘」">
+          <a href="">
+            <div class="card-thumb">
+              <img src="img/Program-img9.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">2025년 과학 재능기부 강연 「10월의 하늘」</h3>
+              <ul class="card-info">
+                <li><strong>일정</strong><p>2025. 10. 25</p></li>
+                <li><strong>대상</strong><p>초등 4학년 ~ 중학생</p></li>
+                <li><strong>접수기간</strong><p>2025. 10. 17 ~  10. 21</p></li>
+                <li><strong>접수현황</strong><p>3/40명</p></li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="pagenation">
+        <button class="page-btn prev" disabled>
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <ol id="numbers"></ol>
+        <button class="page-btn next">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div class="empty">
+        <img src="img/no-data.png" alt="">
+        <p>검색 결과가 없습니다.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <nav class="footernav">
+          <button class="fNavBtn">개인정보처리방침</button>
+          <button class="fNavBtn">영상정보처리방침</button>
+          <button class="fNavBtn">저작권정책</button>
+          <button class="fNavBtn">행정서비스헌장</button>
+          <button class="fNavBtn">전화번호</button>
+        </nav>
+        <div class="footer-sub">
+          <div class="other-site-nav">
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-title">교육청 및 직속기관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">대전광역시교육청</a></li>
+                  <li><a href="#">대전동부교육지원청</a></li>
+                  <li><a href="#">대전서부교육지원청</a></li>
+                  <li><a href="#">대전교육과학연구원</a></li>
+                  <li><a href="#">대전교육연수원</a></li>
+                  <li><a href="#">대전평생학습관</a></li>
+                  <li><a href="#">대전교육정보원</a></li>
+                  <li><a href="#">한밭교육박물관</a></li>
+                  <li><a href="#">대전학생해양수련원</a></li>
+                  <li><a href="#">대전유아교육진흥원</a></li>
+                  <li><a href="#">대전특수교육원</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">대전지역공공도서관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">유성구통합도서관</a></li>
+                  <li><a href="#">동구공공도서관</a></li>
+                  <li><a href="#">가수원도서관</a></li>
+                  <li><a href="#">갈마도서관</a></li>
+                  <li><a href="#">둔산도서관</a></li>
+                  <li><a href="#">산성어린이도서관</a></li>
+                  <li><a href="#">서구어린이도서관</a></li>
+                  <li><a href="#">석봉도서관</a></li>
+                  <li><a href="#">송촌도서관</a></li>
+                  <li><a href="#">안산도서관</a></li>
+                  <li><a href="#">월평도서관</a></li>
+                  <li><a href="#">한밭도서관</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">유관기관/단체</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">교육부</a></li>
+                  <li><a href="#">국가전자도서관</a></li>
+                  <li><a href="#">국립중앙도서관</a></li>
+                  <li><a href="#">국회도서관</a></li>
+                  <li><a href="#">한국도서관협회</a></li>
+                  <li><a href="#">국립세종도서관</a></li>
+                  <li><a href="#">국립어린이청소년도서관</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="other-site"><span>관련사이트 바로가기</span><img src="img/footersub.png" alt=""></div>
+          <button id="topBtn"><img src="img/topBtn.png" alt=""><span>TOP </span></button>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-b1">
+          <p class="fb1-1 fb1left">34849 대전광역시 중구 동서대로 1360</p>
+          <p class="fb1-1">대표전화 : (042)229-1470</p>
+          <p class="fb1-1 fb1left">팩스번호 : (042)229-1490</p>
+          <p class="fb1-1">E-Mail : djsecclib@korea.k</p>
+          <br>
+          <p class="fb1-2">Copyright(c) Daejeon Student Education & Culture Center. All Rights Reserved.</p>
+        </div>
+        <div class="footer-b2">
+          <button class="footer-sns"><i class="fa-brands fa-youtube"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-facebook"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-twitter"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-instagram"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="javascript/HFscript.js"></script>
+  <script src="javascript/program.js"></script>
+</body>
+
+</html>

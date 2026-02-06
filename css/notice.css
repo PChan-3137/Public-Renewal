@@ -1,0 +1,111 @@
+
+.notice-in{
+
+}
+p{margin: 0;}
+.notice-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.pager{
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+.pager span{
+  font-weight: bold;
+}
+.search-area{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-area select{
+  font-size: 14px;
+  height: 38px;
+  width: 100px;
+}
+.search-area input{
+  padding: 0;
+  padding-left: 10px;
+  height: 38px;
+  width: 220px;
+}
+.search-area button{
+  border: none;
+  background: #37f;
+  color: white;
+  font-size: 18px;
+  width: 100px;
+  height: 38px;
+}
+
+.notice-table{
+  width: 100%;
+  border-top: 2px solid #37f;
+  border-bottom: 1px solid #8F8F8F80;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+.notice-top{min-height: 46px;display: flex;align-items: center;font-weight: 500;}
+.notice-top p{text-align: center;}
+.n-item{min-height: 46px;width: 100%;display: flex; border-top: 1px solid #8F8F8F80;align-items: center;}
+.n-item:hover{background: rgb(247, 242, 205);}
+.n-item-wrap,.n-item-wrap2{display: flex;}
+.num{min-width: 9%; text-align: center;}
+.n-item-wrap{flex: 1;}
+.title{width: 60%; font-weight: 500;}
+.n-item-wrap2{width: 40%;text-align: center;display: flex;align-items: center;}
+.writer{width: 22%;}
+.viewCount{width: 22%;}
+.date{width: 34%;}
+.File{width: 22%;}
+
+
+
+
+
+
+/* 반응형 */
+@media (max-width:768px){
+  .notice-head{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pager{margin: 30px 0;}
+  .search-area{width: 100%;}
+  .search-area input{
+    min-width: 174px;
+    flex: 1;
+  }
+  .notice-table{border-bottom: 1px solid black;}
+  .notice-top,.File{display: none;}
+  .num{padding: 10px;}
+  .n-item{font-size: 14px;border-top: 1px solid black;}
+  .n-item:first-child{border: none;}
+  .n-item-wrap{width: calc(91% - 20px);flex-direction: column;}
+  .title{
+    width: 100%;  
+    margin: 10px 0;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .n-item-wrap2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .writer,.viewCount,.date{width: auto;}
+  .viewCount{
+    padding: 0 20px;margin: 0 20px;
+    border: 1px solid #8F8F8F80;
+    border-top:none;border-bottom: none ;
+  }
+  
+  
+}

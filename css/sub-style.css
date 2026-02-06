@@ -1,0 +1,122 @@
+#sub-main{
+  margin: 80px auto;
+  max-width: 1300px;
+  display: flex;
+  gap: 74px;
+}
+
+.navin{
+  width: 240px; 
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+
+}
+.inTitle{
+  font-size: 24px;
+  margin: 0;
+  padding: 58px 0;
+  text-align: center;
+  background: #3377FF;
+  color: white;
+  border-radius: 15px;
+  cursor: default;
+  margin-bottom: 30px;
+}
+.navinItem{
+  border-radius: 15px;
+  padding: 13px 20px;
+  border: 1px solid #8F8F8F80;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.navinTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.subO .navinTitle::after{
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../img/sub_right.png) no-repeat 0px 0px;
+  transition: 0.3s;
+  /* visibility: hidden; */
+}
+.navinItem.active{border: 1px solid #3377FF;}
+.navinItem.active .navinTitle{
+  font-weight: bold;
+  color: #3377FF;
+}
+.subO.active .navinTitle{
+  padding-bottom: 16px; 
+  border-bottom: 1px solid #8F8F8F80;
+}
+.subO.active .navinTitle::after{
+  background: url(../img/sub_right_blue.png) no-repeat 0px 0px;
+  transform: rotate(90deg);
+  visibility: visible;
+}
+.navinList{
+  margin: 0;
+  padding-left: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  list-style: none;
+} 
+
+.subO.active .navinList{
+  max-height: 500px;
+}
+.navinList li{font-size: 14px;margin: 5px 0;display: flex;gap: 5px;align-items: center;}
+.navinList li::before{content: '•';font-size: 20px;}
+.navinList li.active {color: #3377FF;}
+.navinList li.active a{color: #3377FF; font-weight: bold;}
+
+
+.subContent{
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.scHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.smhTitle{
+  font-size: 46px;
+  line-height: 46px;
+  margin: 0;
+}
+.smhDirec{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 20px
+}
+.smhDirec img{
+  
+  height: 100%;
+}
+
+
+@media (max-width:1024px){
+  .navin{display: none;}
+  .subContent{padding: 0px 40px;}
+  .smhDirec{font-size: 14px; gap: 10px;}
+  .smhDirec img{height: 18px;}
+}
+@media (max-width:768px){
+  .scHeader{flex-direction: column;align-items: flex-start; gap: 6px;}
+}

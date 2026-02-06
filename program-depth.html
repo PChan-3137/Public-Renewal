@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행사신청</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sub-style.css">
+  <link rel="stylesheet" href="css/program-depth.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+  <header id="header">
+      <div class="inner">
+        <div class="logo"><a class="highlight" href="index.html"><img src="img/Logo.png" alt=""></a></div>
+        <nav class="gnb">
+          <a class="menu-item" data-target="menu01" href="#">자료정보
+          </a>
+          <a class="menu-item" data-target="menu02" href="#">프로그램</a>
+          <a class="menu-item" data-target="menu03" href="#">열린공간</a>
+          <a class="menu-item" data-target="menu04" href="#">학교도서관지원</a>
+          <a class="menu-item" data-target="menu05" href="#">문화원안내</a>
+          <a class="menu-item" data-target="menu06" href="#">정보공개</a>
+        </nav>
+        <div class="header-sub">
+          <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+          <button id="sitemapBtn"><a class="highlight" href="sitemap.html"><img src="img/Sitemappng.png" alt=""></a></button>
+          <button id="MmenuBtn"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+    </header>
+    <div class="sub-wrap" id="sub-wrap">
+      <div class="sub-inner">
+        <div class="logo sub-op"><img src="img/Logo.png" alt=""></div>
+        <div class="sub-menu">
+          <div class="sub-panel" id="menu01" data-panel="data">
+            <ul>
+              <li><a href="#">검색</a></li>
+              <li><a href="#">신청</a></li>
+              <li><a href="#">내서재</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu02" data-panel="program">
+            <ul>
+              <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+              <li><a href="#">동아리</a></li>
+              <li><a href="#">견학</a></li>
+              <li><a href="#">내강좌실</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu03" data-panel="space">
+            <ul>
+              <li><a href="#">시설이용</a></li>
+              <li><a href="#">정보공유</a></li>
+              <li><a href="#">공공도서관연계</a></li>
+              <li><a href="#">참여신청</a></li>
+              <li><a href="#">사이버 신고센터</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu04" data-panel="support">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">업무지원</a></li>
+              <li><a href="#">새소식</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu05" data-panel="info">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a class="highlight" href="notice.html">소식</a></li>
+              <li><a href="#">문화원홍보</a></li>
+            </ul>
+          </div>
+          <div class="sub-panel" id="menu06" data-panel="open">
+            <ul>
+              <li><a href="#">정보공개안내</a></li>
+              <li><a href="#">청렴투명행정</a></li>
+              <li><a href="#">자치법규 · 규정</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-sub">
+          <button class="sub-op"><img src="img/Login.png" alt=""></button>
+          <button class="sub-op"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+    </div>
+    <div class="M-wrapper" id="M-wrapper">
+      <div class="M-header">
+        <div class="logo"><a href=""><img src="img/Logo.png" alt=""></a></div>
+        <div class="header-sub">
+          <button><a class="highlight" href="login.html"><img src="img/Login.png" alt=""></a></button>
+          <button id="MmenuClose"><img src="img/Sitemappng.png" alt=""></button>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub1">
+        <div class="M-title">자료정보</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">검색</a></li>
+            <li><a href="">신청</a></li>
+            <li><a href="">내서재</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub2">
+        <div class="M-title">프로그램</div>
+        <div class="M-content">
+          <ul>
+            <li><a class="highlight" href="program.html">강좌 · 행사</a></li>
+            <li><a href="">동아리</a></li>
+            <li><a href="">견학</a></li>
+            <li><a href="">내강좌실</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub3">
+        <div class="M-title">열린공간</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">시설이용</a></li>
+            <li><a href="">정보공유</a></li>
+            <li><a href="">공공도서관연계</a></li>
+            <li><a href="">참여신청</a></li>
+            <li><a href="">사이버 신고센터</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub4">
+        <div class="M-title">학교도서관지원</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">소개</a></li>
+            <li><a href="">업무지원</a></li>
+            <li><a href="">새소식</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub5">
+        <div class="M-title">문화원안내</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">소개</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a class="highlight" href="notice.html">소식</a></li>
+            <li><a href="">문화원홍보</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="M-menu" id="M-sub6">
+        <div class="M-title">정보공개</div>
+        <div class="M-content">
+          <ul>
+            <li><a href="">정보공개안내</a></li>
+            <li><a href="">청렴투명행정</a></li>
+            <li><a href="">자치법규 · 규정</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  <div id="sub-main">
+    <div class="navin">
+      <h2 class="inTitle">프로그램</h2>
+      <div class="navinItem subO active">
+        <div class="navinTitle">강좌 · 행사</div>
+        <ul class="navinList">
+          <li class="active"><a class="highlight" href="program.html">강좌 · 행사 </a></li>
+          <li><a href="">온라인 북큐레이션</a></li>
+          <li><a href="">온라인 책놀이터</a></li>
+        </ul>
+      </div>
+      <div class="navinItem"><div class="navinTitle">동아리</div></div>
+      <div class="navinItem subO"><div class="navinTitle">견학</div></div>
+      <div class="navinItem subO"><div class="navinTitle">내강좌실</div></div>
+      
+    </div>
+    <div class="subContent">
+      <div class="scHeader">
+        <h2 class="smhTitle">강좌 · 행사</h2>
+        <div class="smhDirec">
+          <a href="index.html"><img src="img/home-direc.png" alt=""></a>
+          <img src="img/right-direc.png" alt="">
+          <p>프로그램</p>
+          <img src="img/right-direc.png" alt="">
+          <p>강좌 · 행사</p>
+          <img src="img/right-direc.png" alt="">
+          <p>강좌 행사</p>
+        </div>
+      </div>
+      <div class="sititle"><i class="fa-regular fa-calendar-minus"></i>접수정보</div>
+      <div class="box box1">
+        <div class="box1-section1">
+          <ul>
+            <li><strong>접수기간</strong><p>2025. 12. 23.(화) 09:00 ~ 2026. 1. 13.(화) 18:00</p></li>
+            <li><strong>접수방법</strong><p>인터넷 (비인증접수)</p></li>
+            <li><strong>지역제한</strong><p>대전광역시</p></li>
+            <li><strong>접수현황</strong><p>신청자수 : 6/15 명 (대기자수 : 0/5 명)</p></li>
+          </ul>
+        </div>
+        <div class="box1-section2">
+          <p class="stat">접수중</p>
+          <button class="app">신청하기</button>
+        </div>
+        
+      </div>
+      <div class="sititle"><i class="fa-solid fa-landmark"></i>행사정보</div>
+      <div class="box2title">3~5학년 겨울방학 특강 "신나는 미술놀이“</div>
+      <div class="box box2">
+        <img src="img/Program-img2.jpg" alt="">
+        <div class="box2-section">
+          <ul>
+            <li><strong>일시</strong><p>2026. 01. 20 ~ 2026. 01. 23 10:00~11:30</p></li>
+            <li><strong>장소</strong><p>진잠도서관 북나눔터(2층)</p></li>
+            <li><strong>대상</strong><p>어린이 (초등3~5학년)</p></li>
+            <li><strong>강사</strong><p>홍길동</p></li>
+            <li><strong>비용</strong><p>16,000원</p></li>
+            <li><strong>문의</strong><p>042-123-4567</p></li>
+            <li><strong>첨부</strong><p><a href="#none">2026년 **도서관 겨울방학특강 강의계획서(3~5학년).pdf</a></p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail">
+        <p>- 총 4차시 수업으로 진행되며, 수강 중간 결석 및 취소하는 경우, 다음 대기자의 참여가 어렵습니다. 이 점 숙지하시어 신중한 신청을 바랍니다.</p>
+        <p>- 특강 시작 전 취소를 원하시는 경우 홈페이지 또는 전화로 취소 부탁드립니다.</p>
+        <p>- 문의 042 123 4567</p>
+      </div>
+      <a class="highlight" href="program.html">
+        <button class="listBtn">목록<img src="img/Refund_back.png" alt=""></button>
+      </a>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <nav class="footernav">
+          <button class="fNavBtn">개인정보처리방침</button>
+          <button class="fNavBtn">영상정보처리방침</button>
+          <button class="fNavBtn">저작권정책</button>
+          <button class="fNavBtn">행정서비스헌장</button>
+          <button class="fNavBtn">전화번호</button>
+        </nav>
+        <div class="footer-sub">
+          <div class="other-site-nav">
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-title">교육청 및 직속기관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">대전광역시교육청</a></li>
+                  <li><a href="#">대전동부교육지원청</a></li>
+                  <li><a href="#">대전서부교육지원청</a></li>
+                  <li><a href="#">대전교육과학연구원</a></li>
+                  <li><a href="#">대전교육연수원</a></li>
+                  <li><a href="#">대전평생학습관</a></li>
+                  <li><a href="#">대전교육정보원</a></li>
+                  <li><a href="#">한밭교육박물관</a></li>
+                  <li><a href="#">대전학생해양수련원</a></li>
+                  <li><a href="#">대전유아교육진흥원</a></li>
+                  <li><a href="#">대전특수교육원</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">대전지역공공도서관</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">유성구통합도서관</a></li>
+                  <li><a href="#">동구공공도서관</a></li>
+                  <li><a href="#">가수원도서관</a></li>
+                  <li><a href="#">갈마도서관</a></li>
+                  <li><a href="#">둔산도서관</a></li>
+                  <li><a href="#">산성어린이도서관</a></li>
+                  <li><a href="#">서구어린이도서관</a></li>
+                  <li><a href="#">석봉도서관</a></li>
+                  <li><a href="#">송촌도서관</a></li>
+                  <li><a href="#">안산도서관</a></li>
+                  <li><a href="#">월평도서관</a></li>
+                  <li><a href="#">한밭도서관</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-title">유관기관/단체</a>
+                <ul class="f-sub-menu">
+                  <li><a href="#">교육부</a></li>
+                  <li><a href="#">국가전자도서관</a></li>
+                  <li><a href="#">국립중앙도서관</a></li>
+                  <li><a href="#">국회도서관</a></li>
+                  <li><a href="#">한국도서관협회</a></li>
+                  <li><a href="#">국립세종도서관</a></li>
+                  <li><a href="#">국립어린이청소년도서관</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="other-site"><span>관련사이트 바로가기</span><img src="img/footersub.png" alt=""></div>
+          <button id="topBtn"><img src="img/topBtn.png" alt=""><span>TOP </span></button>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-b1">
+          <p class="fb1-1 fb1left">34849 대전광역시 중구 동서대로 1360</p>
+          <p class="fb1-1">대표전화 : (042)229-1470</p>
+          <p class="fb1-1 fb1left">팩스번호 : (042)229-1490</p>
+          <p class="fb1-1">E-Mail : djsecclib@korea.k</p>
+          <br>
+          <p class="fb1-2">Copyright(c) Daejeon Student Education & Culture Center. All Rights Reserved.</p>
+        </div>
+        <div class="footer-b2">
+          <button class="footer-sns"><i class="fa-brands fa-youtube"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-facebook"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-twitter"></i></button>
+          <button class="footer-sns"><i class="fa-brands fa-instagram"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="javascript/HFscript.js"></script>
+</body>
+</html>
