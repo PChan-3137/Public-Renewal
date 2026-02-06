@@ -2,7 +2,7 @@
 
 ![mainvisual](https://github.com/user-attachments/assets/32e362a6-3bb5-457f-845d-b638c9670d65)
 
-## 대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 리뉴얼하였습니다.
+#### 대전학생교육문화원 사이트의 정보 구조 개선 및 가독성,탐색 편의성 향상을 위해 리뉴얼하였습니다.
 
 ### Before & After
 
@@ -14,6 +14,7 @@
 ## Link
 -바로가기 (web-site) : [link](https://pchan-3137.github.io/Public-Renewal/) <br/>
 -기획서 (Figma-slide) : [link](https://www.figma.com/slides/mnPXyfnT0IcQqa9w7wBcAT/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%B0%95%EC%B0%AC?t=PbzM5V5iYU8hPhc3-6) <br/>
+-디자인 (Figma-Design) : [link](https://www.figma.com/design/VZE5cDK8jYcgOOuE32GtKN/%EB%8C%80%EC%A0%84%ED%95%99%EC%83%9D%EA%B5%90%EC%9C%A1%EB%AC%B8%ED%99%94%EC%9B%90-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%B0%95%EC%B0%AC?node-id=117-931)
 
 ## 사용된 기술
 
