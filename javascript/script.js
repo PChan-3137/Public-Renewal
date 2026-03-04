@@ -101,4 +101,4 @@ function openPopup(){
   popup.classList.remove('hide');
   document.body.classList.add('body-lock');
 }
-openPopup()
+// openPopup()
